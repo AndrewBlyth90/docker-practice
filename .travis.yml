@@ -7,5 +7,5 @@ services:
 before_install:
   - docker build -t andrewblyth90/docker-practice -f Dockerfile.dev .
 
-  script:
+script:
   - docker run -e CI=true andrewblyth90/docker-practice npm run test -- --coverage
